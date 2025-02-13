@@ -1,11 +1,18 @@
+import {useNavigate} from "react-router-dom"
 import Logo from "../../assets/Tela Login/logo-ws.png"
 import styles from "./Login.module.scss"
 
 function Login() {
+    const navigate = useNavigate()
+
+    const redirecionamentoReembolso = () => {
+        navigate("/reembolsos")
+    }
+
     return (
         <main>
             <section className={styles.containerImagem}>
-            </section>
+</section>
             <section className={styles.containerForm}>
                 <img src={Logo} alt="logo da Wilson Sons" />
                 <h1>Boas vindas ao <br />Novo Portal SISPAR</h1>
@@ -15,7 +22,7 @@ function Login() {
                     <input type="password" name="senha" id="senha" placeholder="Senha"/>
                     <a href="#">Esqueci minha senha</a>
                     <div>
-                        <button className={styles.botaoEntrar}>Login</button>
+                        <button onClick={redirecionamentoReembolso} className={styles.botaoEntrar}>Entrar</button>
                         <button className={styles.botaoCriarConta}>Criar conta</button>
                     </div>
                 </form>
