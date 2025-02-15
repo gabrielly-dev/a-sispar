@@ -10,9 +10,9 @@ function Login() {
     }
 
     return (
-        <main>
+        <main className={styles.mainLogin}>
             <section className={styles.containerImagem}>
-</section>
+            </section>
             <section className={styles.containerForm}>
                 <img src={Logo} alt="logo da Wilson Sons" />
                 <h1>Boas vindas ao <br />Novo Portal SISPAR</h1>

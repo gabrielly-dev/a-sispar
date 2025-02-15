@@ -1,14 +1,21 @@
 header {
     width: 8vw;
+    height: 5vh;
     display: flex;
     justify-content: space-evenly;
+    border: solid violet;
+    align-items: center;
 }
 
-main {
+.mainReembolsos{
     display: flex;
     flex-direction: column;
+    height: 95vh;
+    border: solid red;
     article {
         display: flex;
+        height: 100%;
+        border: solid pink;
         figure{
             border: solid blue;
         }
