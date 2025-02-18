@@ -1,23 +1,150 @@
-header {
-    width: 8vw;
-    height: 5vh;
+
+.containerReembolso{
     display: flex;
-    justify-content: space-evenly;
-    border: solid violet;
-    align-items: center;
+    
 }
 
-.mainReembolsos{
+.containerConteudo{
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 95vh;
-    border: solid red;
-    article {
-        display: flex;
+    div{
+        width: 100%;
         height: 100%;
-        border: solid pink;
-        figure{
-            border: solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        width: 100vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        img{
+            padding: 0px 0px 0px 15px;
+        }
+        p{
+            padding: 0px 0px 0px 15px;
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+    div {
+        .mainReembolsos{
+            display: flex;
+            flex-direction: column;
+            height: 50vh;
+            width: 50vw;
+            justify-content: space-between;
+            h1{
+                font-size: 2rem;
+                font-weight: 700;
+                font-family: "Inter";
+                margin: 0px 0px 10px 0px;
+            }
+            p{
+                font-size: 1rem;
+                font-weight: 400;
+                font-family: "Inter";
+            }
+            article {
+                margin: 15px 0px 30px 0px;
+
+                display: flex;
+                height: 100%;
+                width: 50vw;
+                height: 26vh;
+                justify-content: space-between;
+                figure{
+                    border: 0.8px solid #CBD4E1;
+                    border-radius: 6px;
+                    width: 16vw;
+                    height: 22vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.3125rem;
+                    font-weight: 700;
+                    font-family: "Inter";
+                    img{
+                        width: 15%;
+                        padding: 15px 0px;
+                    }
+                }
+            }
+        
+            section{
+                display: flex;
+                border: 0.8px solid #CBD4E1;
+                border-radius: 6px;
+                justify-content: space-evenly;
+                height: 15vh;
+                width: 100%;
+                align-items: center;
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    height: 7vh;
+                    width: 9vw;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    h4{
+                        font-size: 1rem;
+                        font-weight: 700;
+                        font-family: "Inter";
+                    }
+                    p{
+                        font-size: 1rem;
+                        font-weight: 400;
+                        font-family: "Inter";
+                    }
+                    .BackgroundSolicitados {
+                        background-color: #00BEDD;
+                        padding: 6%;
+                        height: 60%;
+                        border-radius: 6px;
+                    }
+                    .BackgroundAnalises{
+                        background-color: #E56700;
+                        padding: 6%;
+                        height: 60%;
+                        border-radius: 6px;
+                    }
+                    .BackgroundAprovadas{
+                        background-color: #007A6A;
+                        padding: 6%;
+                        height: 60%;
+                        border-radius: 6px;
+                    }
+                    .BackgroundRejeitados{
+                        background-color: #A60B2F;
+                        padding: 6%;
+                        height: 60%;
+                        border-radius: 6px;
+                    }
+                }
+            }
+
+            .sistemaAtualizado{
+                margin: 10px 0px 0px 0px;
+                height: 5vh;
+                width: 10vw;
+                display: flex;
+                flex-direction: row;
+                border: none;
+                p{
+                    font-family: "Inter";
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: #0844C4;
+                }
+        
+            }
         }
     }
 }
+

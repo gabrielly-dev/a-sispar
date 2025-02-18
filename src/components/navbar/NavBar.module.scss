@@ -1,0 +1,14 @@
+.navBarEstilo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    section{
+        display: flex;
+        flex-direction: column;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
