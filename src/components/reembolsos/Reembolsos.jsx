@@ -1,3 +1,4 @@
+import {useNavigate} from "react-router-dom"
 import Home from "../../assets/Dashboard/Home.png";
 import Seta from "../../assets/Dashboard/Vector.png";
 import BotaoReembolso from "../../assets/Dashboard/Solicitar-Reembolso.png"
@@ -12,9 +13,15 @@ import NavBar from "../navbar/NavBar.jsx"
 import styles from "./Reembolsos.module.scss"
 
 function Reembolsos () {
+
+    const navigate = useNavigate()
+    const redirecionamentoSolicitacao = () => {
+        navigate("/solicitacao")
+    }
+
     return(
         <div className={styles.containerReembolso}>
-            <NavBar />  
+            <NavBar/>
             
             <div className={styles.containerConteudo}>
                 <header>
@@ -22,12 +29,12 @@ function Reembolsos () {
                     <img src={Seta} alt="seta de redirecionamento" />
                     <p>Reembolsos</p>
                 </header>
-                <div>
-                    <main className={styles.mainReembolsos}>
+                <main className={styles.containerCentralizacao}>
+                    <div className={styles.mainReembolsos}>
                         <h1>Sistema de Reembolsos</h1>
                         <p>Solicite novos pedidos de reembolso, visualize solicitações em análise e todo o histórico</p>
                         <article>
-                            <figure>
+                            <figure onClick={redirecionamentoSolicitacao}>
                                 <img src={BotaoReembolso} alt="imagem de um reembolso"/>
                                 <figcaption>Solicitar Reembolso</figcaption>
                             </figure>
@@ -71,8 +78,8 @@ function Reembolsos () {
                             <p>Sistema atualizado.</p>
                         </section>
                     
-                    </main>
-                </div>
+                    </div>
+                </main>
             </div>
 
         </div>

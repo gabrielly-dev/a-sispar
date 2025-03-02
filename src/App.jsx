@@ -11,7 +11,7 @@ function App () {
       <Routes>
         <Route path="/" element={<Login/>}></Route>
         <Route path="/reembolsos" element={<Reembolsos/>}></Route>
-        <Route path="solicitacao" element={<Solicitacao/>}></Route>
+        <Route path="/solicitacao" element={<Solicitacao/>}></Route>
       </Routes>
     </BrowserRouter>
   )

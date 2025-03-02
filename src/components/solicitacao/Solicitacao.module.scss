@@ -1,0 +1,44 @@
+.paginaSolicitacao{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    border: solid red;
+    .conteudoPrincipal{
+        width: 100%;
+        height: 100%;
+        border: solid blue;
+        display: flex;
+        flex-direction: column;
+        .headerSolicitacao{
+            width: 100%;
+            height: 5%;
+            display: flex;
+            align-items: center;
+            border: solid orange;
+            img{
+                padding: 0px 0px 0px 15px;
+                border: solid brown;
+            }
+            p{
+                padding: 0px 0px 0px 15px;
+                font-family: "Inter";
+                font-weight: 400;
+                font-size: 1rem;
+                border: solid burlywood;
+            }
+        }
+
+        .containerCentralizado{
+            height: 100%;
+            border: solid rebeccapurple;
+            .seccaoFormularios{
+                border: solid black;
+                width: 98%;
+                height: 25%;
+            }
+        }
+
+    }
+
+    
+}
