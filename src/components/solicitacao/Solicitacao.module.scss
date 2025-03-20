@@ -36,6 +36,18 @@
                 width: 98%;
                 height: 25%;
             }
+
+            table{
+                border: solid red;
+
+                th{
+                    border: solid black;
+                }
+
+                td{
+                    border: solid black
+                }
+            }
         }
 
     }

@@ -11,6 +11,15 @@ import Historico from "../../assets/Header/botaoHistorico.png"
 function NavBar()  {
 
     const navigate = useNavigate();
+    const redirecionamentoSolicitacao = () => {
+        navigate("/solicitacao")
+    }
+    const redirecionamentoReembolsos = () => {
+        navigate("/reembolsos")
+    }
+    const redirecionamentoLogin = () => {
+        navigate("/")
+    }
 
     return(
         <nav className={styles.navBarEstilo}>
@@ -25,10 +34,10 @@ function NavBar()  {
                     </button>
 
                     <div>
-                        <button>
+                        <button onClick={redirecionamentoReembolsos}>
                             <img src={Home} alt="" />
                         </button>
-                        <button>
+                        <button onClick={redirecionamentoSolicitacao}>
                             <img src={Reembolso} alt="" />
                         </button>
                         <button>
@@ -40,7 +49,7 @@ function NavBar()  {
                     </div>
                 </section>
                 
-                <button className={styles.botaoSair}>
+                <button className={styles.botaoSair} onClick={redirecionamentoLogin}>
                     <img src={Sair} alt="" />
                 </button>
 
