@@ -6,8 +6,8 @@ function Login() {
     const navigate = useNavigate()
 
 
-    const redirecionamentoReembolso = (event) => {
-        event.preventDefault()
+    const redirecionamentoReembolso = () => {
+        //event.preventDefault()
         navigate("/reembolsos")
     }
 
@@ -24,7 +24,7 @@ function Login() {
                     <input type="password" name="senha" id="senha" placeholder="Senha"/>
                     <a href="#">Esqueci minha senha</a>
                     <div>
-                        <button onClick={redirecionamentoReembolso} className={styles.botaoEntrar}>Entrar</button>
+                        <button onClick={redirecionamentoReembolso} type="button" className={styles.botaoEntrar}>Entrar</button>
                         <button className={styles.botaoCriarConta}>Criar conta</button>
                     </div>
                 </form>
