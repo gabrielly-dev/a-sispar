@@ -5,7 +5,9 @@ import styles from "./Login.module.scss"
 function Login() {
     const navigate = useNavigate()
 
-    const redirecionamentoReembolso = () => {
+
+    const redirecionamentoReembolso = (event) => {
+        event.preventDefault()
         navigate("/reembolsos")
     }
 
