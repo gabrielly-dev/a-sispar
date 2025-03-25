@@ -14,27 +14,194 @@
             height: 5%;
             display: flex;
             align-items: center;
-            border: solid orange;
             img{
                 padding: 0px 0px 0px 15px;
-                border: solid brown;
             }
             p{
                 padding: 0px 0px 0px 15px;
                 font-family: "Inter";
                 font-weight: 400;
                 font-size: 1rem;
-                border: solid burlywood;
             }
         }
 
         .containerCentralizado{
             height: 100%;
-            border: solid rebeccapurple;
-            .seccaoFormularios{
-                border: solid black;
-                width: 98%;
-                height: 25%;
+            .formSolicitacao{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                
+                .dadosGerais{
+                    display: flex;
+                    flex-direction: column;
+                    width: 40%;
+
+                    .infosGeraisBusca{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .inputNome{
+                            display: flex;
+                            flex-direction: column;
+                            width: 30%;
+                        }
+
+                        .inputEmpresa{
+                            display: flex;
+                            flex-direction: column;
+                            width: 30%;
+                        }
+
+                        .inputPrestContas{
+                            display: flex;
+                            flex-direction: column;
+                            width: 30%;
+                        }
+                    }
+                    .descricao{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+                } 
+
+                .barraCentral {
+                    border: solid black 1px;
+
+                }
+
+                .informacoesFinanceiras{
+                    width: 57%;
+
+                    .caixaSeletores{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .data{
+                            display: flex;
+                            flex-direction: column;
+                            width: 13%;
+                        }
+                        .tipoDeDespesa{
+                            display: flex;
+                            flex-direction: column;
+                            width: 31%;
+                        }
+                        .centroDeCusto{
+                            display: flex;
+                            flex-direction: column;
+                            width: 50%;
+                        }
+                    }
+
+                    .caixaDetalhamentoFinanceiro{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .ordDivPep{
+                            display: flex;
+                            flex-direction: row;
+                            width: 25%;
+                            justify-content: space-between;
+
+                            .ordInt{
+                                display: flex;
+                                flex-direction: column;
+                                width: 30%;
+                            }
+
+                            .labelDiv{
+                                display: flex;
+                                flex-direction: column;
+                                width: 30%;
+                            }
+
+                            .labelPep{
+                                display: flex;
+                                flex-direction: column;
+                                width: 30%;
+                            }
+
+                        }
+
+                        .moedaDistKm{
+                            display: flex;
+                            flex-direction: row;
+                            width: 20%;
+                            justify-content: space-between;
+    
+                            .labelMoeda{
+                                display: flex;
+                                flex-direction: column;
+                                width: 60%;
+                            }
+
+                            .labelDistKm{
+                                display: flex;
+                                flex-direction: column;
+                                width: 35%;
+                            }
+                        }
+
+                        .valorKmFaturadoDespesa{
+                            display: flex;
+                            flex-direction: row;
+                            width: 35%;
+                            justify-content: space-between;
+
+                            .labelValorKm{
+                                display: flex;
+                                flex-direction: column;
+                                width: 30%;
+                            }
+
+                            .labelValFaturado{
+                                display: flex;
+                                flex-direction: column;
+                                width: 30%;
+                            }
+
+                            .labelDespesa{
+                                display: flex;
+                                flex-direction: column;
+                                width: 30%;
+                            }
+                        }
+
+                        .botoesSalvarDeletar{
+                            display: flex;
+                            flex-direction: row;
+                            width: 15%;
+                            justify-content: space-around;
+
+                            .buttonPlus{
+                                background-color: #001A3D;
+                                width: 60%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-evenly;
+                                p{
+                                    color: white;
+                                }
+                            }
+
+                            .buttonDeletar{
+                                background-color: #A60B2F;
+                                width: 25%;
+                            }
+                        }
+                    }
+                }
+
             }
 
             table{

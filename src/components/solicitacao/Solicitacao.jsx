@@ -23,7 +23,7 @@ function Solicitacao () {
 
     return(
         <div className={styles.paginaSolicitacao}>
-            <NavBar />
+            <NavBar/>
             <div className={styles.conteudoPrincipal}>
                 <header className={styles.headerSolicitacao}>
                     <img src={Home} alt="" />
@@ -77,7 +77,7 @@ function Solicitacao () {
                                 <div className={styles.tipoDeDespesa}>
                                     <label htmlFor="">Tipo de Despesa</label>
                                     <select name="tipoDeDespesa" id="tipoDeDespesa" >
-                                        <option id={styles.despesa} value="" disabled selected hidden>Selecionar</option>
+                                        <option id={styles.optionDespesa} value="" disabled selected hidden>Selecionar</option>
                                         <option value="">Alimentação</option>
                                         <option value="">Combustível</option>
                                         <option value="">Condução</option>
@@ -88,7 +88,7 @@ function Solicitacao () {
                                     </select>
                                 </div>
 
-                                <div>
+                                <div className={styles.centroDeCusto}>
                                     <label htmlFor="">Centro de Custo</label>
                                     <select name="centro-custo" id="">
                                         <option id={styles.custo} value="" disabled selected hidden>Selecionar</option>
@@ -100,42 +100,61 @@ function Solicitacao () {
                                 </div>
                             </div>
 
-                            <div>
-                                <div>
-                                    <label htmlFor="">Ord. Int.</label>
-                                    <input type="text" name="" id="" />
+                            <div className={styles.caixaDetalhamentoFinanceiro}>
+                                <div className={styles.ordDivPep}>
 
-                                    <label htmlFor="">Div.</label>
-                                    <input type="text" name="" id="" />
+                                    <div className={styles.ordInt}>
+                                        <label htmlFor="">Ord. Int.</label>
+                                        <input type="text" name="" id="" />
+                                    </div>
+                                    <div className={styles.labelDiv}>
+                                        <label htmlFor="">Div.</label>
+                                        <input type="text" name="" id="" />
+                                    </div>
+                                    <div className={styles.labelPep}>
+                                        <label htmlFor="">PEP</label>
+                                        <input type="text" name="" id="" />
+                                    </div>
 
-                                    <label htmlFor="">PEP</label>
-                                    <input type="text" name="" id="" />
                                 </div>
-                                <div>
-                                    <label htmlFor="">Moeda</label>
-                                    <input type="text" name="" id="" />
-                                    
-                                    <label htmlFor="">Dist / Km</label>
-                                    <input type="text" name="" id="" />
+                                <div className={styles.moedaDistKm}>
+
+                                    <div className={styles.labelMoeda}>
+                                        <label htmlFor="">Moeda</label>
+                                        <input type="text" name="" id="" />
+                                    </div>
+                                    <div className={styles.labelDistKm}>
+                                        <label htmlFor="">Dist / Km</label>
+                                        <input type="text" name="" id="" />
+                                    </div>
+
                                 </div>
-                                <div>
-                                    <label htmlFor="">Valor / Km</label>
-                                    <input type="text" />
+                                <div className={styles.valorKmFaturadoDespesa}>
 
-                                    <label htmlFor="">Val. Faturado</label>
-                                    <input type="text" name="" id="" />
+                                    <div className={styles.labelValorKm}>
+                                        <label htmlFor="">Valor / Km</label>
+                                        <input type="text" />
+                                    </div>
 
-                                    <label htmlFor="">Despesa</label>
-                                    <input type="text" name="" id="" />
+                                    <div className={styles.labelValFaturado}>
+                                        <label htmlFor="">Val. Faturado</label>
+                                        <input type="text" name="" id="" />
+                                    </div>
+
+                                    <div className={styles.labelDespesa}>
+                                        <label htmlFor="">Despesa</label>
+                                        <input type="text" name="" id="" />
+                                    </div>
+
                                 </div>
 
-                                <div>
-                                    <button>
+                                <div className={styles.botoesSalvarDeletar}>
+                                    <button className={styles.buttonPlus}>
                                         <img src={Plus} alt="" />
                                         <p>Salvar</p>
                                     </button>
 
-                                    <button>
+                                    <button className={styles.buttonDeletar}>
                                         <img src={Deletar} alt="" />
                                     </button>
                                 </div>
