@@ -3,32 +3,40 @@
     height: 100vh;
     display: flex;
     border: solid red;
+    overflow: hidden;
     .conteudoPrincipal{
         width: 100%;
         height: 100%;
-        border: solid blue;
+        // border: solid blue;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
         .headerSolicitacao{
             width: 100%;
             height: 5%;
             display: flex;
             align-items: center;
+            // border: solid orange;
             img{
                 padding: 0px 0px 0px 15px;
+                border: solid brown;
             }
             p{
                 padding: 0px 0px 0px 15px;
                 font-family: "Inter";
                 font-weight: 400;
                 font-size: 1rem;
+                // border: solid burlywood;
             }
         }
 
         .containerCentralizado{
             height: 100%;
+            border: solid rebeccapurple;
             .formSolicitacao{
+                border: solid black;
                 width: 100%;
+                height: 25%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
@@ -36,68 +44,164 @@
                 .dadosGerais{
                     display: flex;
                     flex-direction: column;
-                    width: 40%;
+                    border: solid salmon;
+                    width: 30%;
+                    justify-content: space-between;
 
                     .infosGeraisBusca{
                         display: flex;
                         flex-direction: row;
+                        // border: solid royalblue;
                         width: 100%;
                         justify-content: space-between;
+                        height: 45%;
 
                         .inputNome{
                             display: flex;
                             flex-direction: column;
+                            justify-content: space-around;
                             width: 30%;
+                            // border: solid olive;
+                            font-family: 'Inter';
+                            font-size: 1rem;
+                            font-weight: 700;
+                            input{
+                                font-family: 'Inter';
+                                font-size: 1rem;
+                                font-weight: 400;
+                                height: 3rem;
+                                padding: 1rem;
+                                border-radius: 6px;
+                                border: 0.8px solid #CBD4E1;
+                            }
                         }
 
                         .inputEmpresa{
                             display: flex;
                             flex-direction: column;
+                            justify-content: space-around;
                             width: 30%;
+                            font-family: 'Inter';
+                            font-size: 1rem;
+                            font-weight: 700;
+                            // border: solid olive;
+                            input{
+                                font-family: 'Inter';
+                                font-size: 1rem;
+                                font-weight: 400;
+                                height: 3rem;
+                                padding: 1rem;
+                                border-radius: 6px;
+                                border: 0.8px solid #CBD4E1;
+                            }
                         }
 
                         .inputPrestContas{
                             display: flex;
                             flex-direction: column;
+                            justify-content: space-around;
                             width: 30%;
+                            font-family: 'Inter';
+                            font-size: 1rem;
+                            font-weight: 700;
+                            // border: solid olive;
+                            input{
+                                font-family: 'Inter';
+                                font-size: 1rem;
+                                font-weight: 400;
+                                height: 3rem;
+                                padding: 1rem;
+                                border-radius: 6px;
+                                border: 0.8px solid #CBD4E1;
+                            }
                         }
                     }
                     .descricao{
                         display: flex;
                         flex-direction: column;
+                        // border: solid royalblue;
                         width: 100%;
-                        justify-content: space-between;
+                        height: 45%;
+                        justify-content: space-around;
+                        font-family: 'Inter';
+                        font-size: 1rem;
+                        font-weight: 700;
+                        
+                        input{
+                            font-family: 'Inter';
+                            font-size: 1rem;
+                            font-weight: 400;
+                            height: 3rem;
+                            padding: 1rem;
+                            border-radius: 6px;
+                            border: 0.8px solid #CBD4E1;
+                        }
                     }
                 } 
 
                 .barraCentral {
                     border: solid black 1px;
-
+                    height: 90%;
+                    width: 0.01vw;
                 }
 
                 .informacoesFinanceiras{
-                    width: 57%;
+                    width: 67%;
+                    // border: solid seagreen;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
 
                     .caixaSeletores{
                         display: flex;
                         flex-direction: row;
                         width: 100%;
+                        height: 45%;
                         justify-content: space-between;
+                        font-family: 'Inter';
+                        font-size: 1rem;
+                        font-weight: 700;
 
                         .data{
                             display: flex;
                             flex-direction: column;
                             width: 13%;
+                            font-family: 'Inter';
+                            font-size: 1rem;
+                            font-weight: 700;
+                            input{
+                                font-family: 'Inter';
+                                font-size: 1rem;
+                                font-weight: 400;
+                                height: 3rem;
+                                padding: 1rem;
+                            }
                         }
                         .tipoDeDespesa{
                             display: flex;
                             flex-direction: column;
                             width: 31%;
+                            font-family: 'Inter';
+                            font-size: 1rem;
+                            font-weight: 700;
+                            select{
+                                font-family: 'Inter';
+                                font-size: 1rem;
+                                font-weight: 400;
+                            }
                         }
                         .centroDeCusto{
                             display: flex;
                             flex-direction: column;
                             width: 50%;
+                            font-family: 'Inter';
+                            font-size: 1rem;
+                            font-weight: 700;
+                            select{
+                                font-family: 'Inter';
+                                font-size: 1rem;
+                                font-weight: 400;
+                            }
                         }
                     }
 
@@ -105,30 +209,54 @@
                         display: flex;
                         flex-direction: row;
                         width: 100%;
+                        height: 45%;
                         justify-content: space-between;
+                        // border: solid bisque;
+                        font-family: 'Inter';
+                        font-size: 1rem;
+                        font-weight: 700;
 
                         .ordDivPep{
                             display: flex;
                             flex-direction: row;
                             width: 25%;
                             justify-content: space-between;
+                            // border: solid khaki;
 
                             .ordInt{
                                 display: flex;
                                 flex-direction: column;
                                 width: 30%;
+                                // border: solid fuchsia;
+                                input{
+                                    font-family: 'Inter';
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                }
                             }
 
                             .labelDiv{
                                 display: flex;
                                 flex-direction: column;
                                 width: 30%;
+                                // border: solid yellowgreen;
+                                input{
+                                    font-family: 'Inter';
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                }
                             }
 
                             .labelPep{
                                 display: flex;
                                 flex-direction: column;
                                 width: 30%;
+                                // border: solid olive;
+                                input{
+                                    font-family: 'Inter';
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                }
                             }
 
                         }
@@ -136,67 +264,112 @@
                         .moedaDistKm{
                             display: flex;
                             flex-direction: row;
-                            width: 20%;
+                            width: 22%;
                             justify-content: space-between;
+                            // border: solid burlywood;
     
                             .labelMoeda{
                                 display: flex;
                                 flex-direction: column;
-                                width: 60%;
+                                width: 55%;
+                                // border: solid maroon;
+                                input{
+                                    font-family: 'Inter';
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                }
                             }
 
                             .labelDistKm{
                                 display: flex;
                                 flex-direction: column;
-                                width: 35%;
+                                width: 40%;
+                                // border: solid mediumorchid;
+                                input{
+                                    font-family: 'Inter';
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                }
                             }
                         }
 
                         .valorKmFaturadoDespesa{
                             display: flex;
                             flex-direction: row;
-                            width: 35%;
+                            width: 33%;
                             justify-content: space-between;
+                            // border: solid burlywood;
 
                             .labelValorKm{
                                 display: flex;
                                 flex-direction: column;
                                 width: 30%;
+                                // border: solid mediumpurple;
+                                input{
+                                    font-family: 'Inter';
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                }
                             }
 
                             .labelValFaturado{
                                 display: flex;
                                 flex-direction: column;
                                 width: 30%;
+                                // border: solid mediumslateblue;
+                                input{
+                                    font-family: 'Inter';
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                }
                             }
 
                             .labelDespesa{
                                 display: flex;
                                 flex-direction: column;
                                 width: 30%;
+                                // border: solid mediumvioletred;
+                                input{
+                                    font-family: 'Inter';
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                }
                             }
                         }
 
                         .botoesSalvarDeletar{
                             display: flex;
                             flex-direction: row;
-                            width: 15%;
-                            justify-content: space-around;
+                            width: 17%;
+                            // border: solid mediumblue;
+                            justify-content: space-evenly;
 
                             .buttonPlus{
+                                border: none;
+                                border-radius: 6px;
                                 background-color: #001A3D;
-                                width: 60%;
+                                width: 50%;
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: space-evenly;
+                                height: 50%;
+                                font-family: 'Inter';
+                                font-size: 1rem;
+                                font-weight: 400;
                                 p{
                                     color: white;
                                 }
                             }
 
                             .buttonDeletar{
+                                height: 50%;
+                                border: none;
+                                border-radius: 6px;
                                 background-color: #A60B2F;
                                 width: 25%;
+                                font-family: 'Inter';
+                                font-size: 1rem;
+                                font-weight: 400;
                             }
                         }
                     }
