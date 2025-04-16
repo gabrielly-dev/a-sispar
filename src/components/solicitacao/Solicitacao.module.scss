@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    border: solid red;
+    // border: solid red;
     overflow: hidden;
     .conteudoPrincipal{
         width: 100%;
@@ -19,7 +19,7 @@
             // border: solid orange;
             img{
                 padding: 0px 0px 0px 15px;
-                border: solid brown;
+                // border: solid brown;
             }
             p{
                 padding: 0px 0px 0px 15px;
@@ -33,8 +33,8 @@
         .containerCentralizado{
             height: 100%;
             // border: solid rebeccapurple;
-            .formSolicitacao{
-                border: solid black;
+            form{
+                // border: solid black;
                 width: 100%;
                 height: 25%;
                 display: flex;
@@ -59,7 +59,7 @@
                         justify-content: space-between;
                         height: 40%;
 
-                        .inputNome{
+                        div{
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
@@ -68,46 +68,6 @@
                             font-family: 'Inter';
                             font-size: 1rem;
                             font-weight: 700;
-                            input{
-                                font-family: 'Inter';
-                                font-size: 1rem;
-                                font-weight: 400;
-                                height: 3rem;
-                                padding: 0.5rem 1rem  0.5rem 1rem;
-                                border-radius: 6px;
-                                border: 0.8px solid #CBD4E1;
-                            }
-                        }
-
-                        .inputEmpresa{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            width: 30%;
-                            font-family: 'Inter';
-                            font-size: 1rem;
-                            font-weight: 700;
-                            // border: solid olive;
-                            input{
-                                font-family: 'Inter';
-                                font-size: 1rem;
-                                font-weight: 400;
-                                height: 3rem;
-                                padding: 0.5rem 1rem  0.5rem 1rem;
-                                border-radius: 6px;
-                                border: 0.8px solid #CBD4E1;
-                            }
-                        }
-
-                        .inputPrestContas{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            width: 30%;
-                            font-family: 'Inter';
-                            font-size: 1rem;
-                            font-weight: 700;
-                            // border: solid olive;
                             input{
                                 font-family: 'Inter';
                                 font-size: 1rem;
@@ -185,7 +145,7 @@
                                 border: 0.8px solid #CBD4E1;
                             }
                         }
-                        .tipoDeDespesa{
+                        .tipoDeReembolso{
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
@@ -241,46 +201,12 @@
                             justify-content: space-between;
                             // border: solid khaki;
 
-                            .ordInt{
+                            div{
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-between;
                                 width: 30%;
                                 // border: solid fuchsia;
-                                input{
-                                    font-family: 'Inter';
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    height: 3rem;
-                                    padding: 0.5rem 1rem  0.5rem 1rem;
-                                    border-radius: 6px;
-                                    border: 0.8px solid #CBD4E1;
-                                }
-                            }
-
-                            .labelDiv{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                width: 30%;
-                                // border: solid yellowgreen;
-                                input{
-                                    font-family: 'Inter';
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    height: 3rem;
-                                    padding: 0.5rem 1rem  0.5rem 1rem;
-                                    border-radius: 6px;
-                                    border: 0.8px solid #CBD4E1;
-                                }
-                            }
-
-                            .labelPep{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                width: 30%;
-                                // border: solid olive;
                                 input{
                                     font-family: 'Inter';
                                     font-size: 1rem;
@@ -307,7 +233,7 @@
                                 justify-content: space-between;
                                 width: 55%;
                                 // border: solid maroon;
-                                input{
+                                select{
                                     font-family: 'Inter';
                                     font-size: 1rem;
                                     font-weight: 400;
@@ -343,46 +269,12 @@
                             justify-content: space-between;
                             // border: solid burlywood;
 
-                            .labelValorKm{
+                            div{
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-between;
                                 width: 30%;
                                 // border: solid mediumpurple;
-                                input{
-                                    font-family: 'Inter';
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    height: 3rem;
-                                    padding: 0.5rem 1rem  0.5rem 1rem;
-                                    border-radius: 6px;
-                                    border: 0.8px solid #CBD4E1;
-                                }
-                            }
-
-                            .labelValFaturado{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                width: 30%;
-                                // border: solid mediumslateblue;
-                                input{
-                                    font-family: 'Inter';
-                                    font-size: 1rem;
-                                    font-weight: 400;
-                                    height: 3rem;
-                                    padding: 0.5rem 1rem  0.5rem 1rem;
-                                    border-radius: 6px;
-                                    border: 0.8px solid #CBD4E1;
-                                }
-                            }
-
-                            .labelDespesa{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                width: 30%;
-                                // border: solid mediumvioletred;
                                 input{
                                     font-family: 'Inter';
                                     font-size: 1rem;
@@ -441,31 +333,89 @@
 
             }
 
-            .seccaoTabela{
-                padding: 0px 15px 0px 15px;
-                border: solid yellow;
-                table{
-                    border: solid red;
+            .seccaoTabela {
+                margin: 0px 15px;
+                height: 70vh;
+                overflow-x: auto;
+                border: 1px solid #CBD4E1; /* Borda externa da tabela */
+                border-radius: 8px;
+                
+                table {
                     width: 100%;
-                    padding: 0px;
-                    margin: 0px;
-                    border-collapse: collapse;
-                    tr{
-                        padding: 0px;
-                        margin: 0px;
-                        th{
-                            padding: 0px;
-                            margin: 0px;
-                            border: solid black;
-                        }
-        
-                        td{
-                            padding: 0px;
-                            margin: 0px;
-                            border: solid black
+                    border-collapse: separate; /* Mudamos para separate para bordas individuais */
+                    border-spacing: 0;
+                    font-family: 'Inter', sans-serif;
+                    min-width: 1500px;
+              
+                    thead {
+                        tr {
+                            background-color: #f5f5f5;
+                        
+                            th {
+                                padding: 12px 8px;
+                                text-align: left;
+                                font-weight: 600;
+                                color: #333;
+                                border-bottom: 2px solid #CBD4E1; /* Borda inferior do cabeçalho */
+                                border-right: 2px solid #CBD4E1; /* Borda direita das células */
+                                white-space: nowrap;
+                                font-size: 1rem;
+                                
+                                &:first-child {
+                                padding-left: 16px;
+                                width: 40px;
+                                }
+                                
+                                &:last-child {
+                                border-right: none; /* Remove borda da última célula */
+                                }
+                            }
                         }
                     }
-                    
+                  
+                    tbody {
+                        tr {
+                            border-bottom: 1px solid #CBD4E1;
+                        
+                            &:last-child {
+                                border-bottom: none; /* Remove borda da última linha */
+                            }
+                        
+                            td {
+                                padding: 10px 8px;
+                                color: #555;
+                                vertical-align: middle;
+                                font-size: 1rem;
+                                border-right: 1px solid #CBD4E1; /* Borda direita das células */
+                                
+                                &:first-child {
+                                padding-left: 16px;
+                                text-align: center;
+                                border-left: 1px solid #CBD4E1; /* Borda esquerda da primeira célula */
+                                }
+                                
+                                &:last-child {
+                                border-right: none; /* Remove borda da última célula */
+                                }
+                                
+                                img {
+                                cursor: pointer;
+                                width: 20px;
+                                height: 20px;
+                                }
+                            }
+                        
+                            &:nth-child(even) {
+                                background-color: #fafafa;
+                            }
+                        }
+                    }
+                }
+                
+                /* Estilos para valores numéricos */
+                .amount {
+                    text-align: right;
+                    font-family: 'Courier New', monospace; /* Mantém alinhamento de números */
                 }
             }
             
